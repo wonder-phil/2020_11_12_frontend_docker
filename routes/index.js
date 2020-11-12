@@ -46,6 +46,7 @@ router.get('/get_data', async (req,res, next) => {
       axios.get('http://backend:3010/get_backend_data') // http://192.168.254.20:3010/get_backend_data
 	  .then(function (response) {
 	      console.log(response.data);
+	      str = response.data;
 	  })
 	  .catch(function (error) {
 	      console.log("error");
