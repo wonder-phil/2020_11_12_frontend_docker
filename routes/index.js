@@ -52,7 +52,7 @@ router.get('/get_data', async (req,res, next) => {
 	  });
   
       
-      res.json("{ \"frontend\" : " + str + " }" );
+      res.json("{" + str + " }" );
       
   } catch(e) {
     console.log(e);
